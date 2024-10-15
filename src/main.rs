@@ -8,7 +8,7 @@ use numeric::*;
 use simple_types::*;
 use additional_techniques::*;
 use control_flow::*;
-use enums::{demo_simple_enums, demo_enum_with_data, demo_using_option_enum};
+use enums::{demo_simple_enums, demo_enum_with_data, demo_using_option_enum, demo_using_result_enum};
 
 fn main() {
     println!("Hello, world!");
@@ -23,6 +23,7 @@ fn main() {
     demo_simple_enums();
     demo_enum_with_data();
     demo_using_option_enum();
+    demo_using_result_enum();
 }
 
 

@@ -5,6 +5,7 @@ mod control_flow;
 mod enums;
 mod arrays;
 mod tuples;
+mod vectors;
 
 use numeric::*;
 use simple_types::*;
@@ -13,6 +14,7 @@ use control_flow::*;
 use enums::{demo_simple_enums, demo_enum_with_data, demo_using_option_enum, demo_using_result_enum};
 use arrays::*;
 use tuples::*;
+use vectors::demo_vectors;
 
 fn main() {
     println!("Hello, world!");
@@ -31,6 +33,7 @@ fn main() {
     demo_arrays();
     demo_arrays_techniques();
     demo_tuples();
+    demo_vectors();
 }
 
 

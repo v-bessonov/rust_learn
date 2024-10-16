@@ -6,6 +6,7 @@ mod enums;
 mod arrays;
 mod tuples;
 mod vectors;
+mod maps;
 
 use numeric::*;
 use simple_types::*;
@@ -15,6 +16,7 @@ use enums::{demo_simple_enums, demo_enum_with_data, demo_using_option_enum, demo
 use arrays::*;
 use tuples::*;
 use vectors::demo_vectors;
+use maps::demo_maps;
 
 fn main() {
     println!("Hello, world!");
@@ -34,6 +36,7 @@ fn main() {
     demo_arrays_techniques();
     demo_tuples();
     demo_vectors();
+    demo_maps();
 }
 
 

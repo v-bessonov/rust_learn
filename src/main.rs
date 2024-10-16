@@ -3,12 +3,14 @@ mod simple_types;
 mod additional_techniques;
 mod control_flow;
 mod enums;
+mod arrays;
 
 use numeric::*;
 use simple_types::*;
 use additional_techniques::*;
 use control_flow::*;
 use enums::{demo_simple_enums, demo_enum_with_data, demo_using_option_enum, demo_using_result_enum};
+use arrays::*;
 
 fn main() {
     println!("Hello, world!");
@@ -24,6 +26,8 @@ fn main() {
     demo_enum_with_data();
     demo_using_option_enum();
     demo_using_result_enum();
+    demo_arrays();
+    demo_arrays_techniques();
 }
 
 

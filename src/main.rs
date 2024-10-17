@@ -1,3 +1,5 @@
+//#![allow(dead_code)]
+//#![allow(unused_imports)]
 mod numeric;
 mod simple_types;
 mod additional_techniques;
@@ -7,6 +9,7 @@ mod arrays;
 mod tuples;
 mod vectors;
 mod maps;
+mod scope;
 
 use numeric::*;
 use simple_types::*;
@@ -17,6 +20,7 @@ use arrays::*;
 use tuples::*;
 use vectors::demo_vectors;
 use maps::demo_maps;
+use scope::*;
 
 fn main() {
     println!("Hello, world!");
@@ -37,6 +41,7 @@ fn main() {
     demo_tuples();
     demo_vectors();
     demo_maps();
+    demo_locals();
 }
 
 

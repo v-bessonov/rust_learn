@@ -42,6 +42,10 @@ fn main() {
     demo_vectors();
     demo_maps();
     demo_locals();
+    demo_static_local();
+    demo_static_global();
+
+    println!("main, GLOBAL MESSAGE: {}", GLOBAL_MESSAGE);
 }
 
 

@@ -46,6 +46,8 @@ fn main() {
     demo_static_global();
 
     println!("main, GLOBAL MESSAGE: {}", GLOBAL_MESSAGE);
+
+    demo_static_mutable();
 }
 
 

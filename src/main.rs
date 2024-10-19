@@ -10,6 +10,8 @@ mod tuples;
 mod vectors;
 mod maps;
 mod scope;
+mod parts;
+mod strings;
 
 use numeric::*;
 use simple_types::*;
@@ -21,9 +23,26 @@ use tuples::*;
 use vectors::demo_vectors;
 use maps::demo_maps;
 use scope::*;
+use parts::Parts;
+use strings::*;
 
 fn main() {
-    println!("Hello, world!");
+    let course = Parts::Part1;
+
+    match course {
+        Parts::Part1 => {
+            run_part1();
+        }
+        Parts::Part2 => {
+            run_part2();
+        }
+    }
+}
+
+fn run_part2() {
+}
+
+fn run_part1() {
     demo_integers();
     demo_floats();
     demo_other_simple_types();
@@ -48,6 +67,7 @@ fn main() {
     println!("main, GLOBAL MESSAGE: {}", GLOBAL_MESSAGE);
 
     demo_static_mutable();
+    demo_string_handling();
 }
 
 

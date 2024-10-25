@@ -14,6 +14,7 @@ mod parts;
 mod strings;
 mod copying_moving;
 mod cloning;
+mod borrowing;
 
 use numeric::*;
 use simple_types::*;
@@ -29,6 +30,7 @@ use parts::Parts;
 use strings::*;
 use copying_moving::demo_copying_moving;
 use cloning::demo_cloning;
+use borrowing::*;
 
 fn main() {
     let course = Parts::Part1;
@@ -74,6 +76,8 @@ fn run_part1() {
     demo_string_handling();
     demo_copying_moving();
     demo_cloning();
+    demo_simple_borrowing();
+    demo_borrow_checker();
 }
 
 

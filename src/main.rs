@@ -80,6 +80,8 @@ fn run_part1() {
     demo_borrow_checker();
     demo_string_slice_intro();
     demo_string_slice_techniques();
+    demo_array_slice_intro();
+    demo_array_slice_techniques();
 }
 
 

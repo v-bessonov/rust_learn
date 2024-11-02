@@ -15,6 +15,7 @@ mod strings;
 mod copying_moving;
 mod cloning;
 mod borrowing;
+mod functions;
 
 use numeric::*;
 use simple_types::*;
@@ -31,9 +32,10 @@ use strings::*;
 use copying_moving::demo_copying_moving;
 use cloning::demo_cloning;
 use borrowing::*;
+use functions::*;
 
 fn main() {
-    let course = Parts::Part1;
+    let course = Parts::Part2;
 
     match course {
         Parts::Part1 => {
@@ -46,6 +48,12 @@ fn main() {
 }
 
 fn run_part2() {
+    demo_passing_value();
+    demo_passing_references();
+    demo_passing_mutable_references();
+    demo_returning_value();
+    demo_returning_reference();
+    demo_returning_mutable_reference();
 }
 
 fn run_part1() {

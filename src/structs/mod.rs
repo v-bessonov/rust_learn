@@ -1,9 +1,13 @@
-use crate::mytypes::Employee;
+struct Employee {
+    pub name: String,
+    pub salary: u64,
+    pub full_time: bool
+}
 
 pub fn demo_accessing_struct() {
     println!("\nDemo accessing structs");
 
-    let _e1: crate::mytypes::Employee;
+    let _e1: crate::mytypes::employee::Employee;
 
     let _e2: Employee;
 

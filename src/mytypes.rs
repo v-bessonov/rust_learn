@@ -1,5 +1,3 @@
-pub struct Employee {
-    pub name: String,
-    pub salary: u64,
-    pub full_time: bool
-}
+pub mod point;
+pub mod employee;
+pub mod point3d;

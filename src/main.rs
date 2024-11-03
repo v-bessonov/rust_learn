@@ -19,6 +19,7 @@ mod functions;
 mod closures;
 mod structs;
 mod mytypes;
+mod structs_functionality;
 
 use numeric::*;
 use simple_types::*;
@@ -38,6 +39,7 @@ use borrowing::*;
 use functions::*;
 use closures::*;
 use structs::*;
+use structs_functionality::*;
 
 fn main() {
     let course = Parts::Part2;
@@ -71,6 +73,11 @@ fn run_part2() {
     demo_struct_pass_reference();
     demo_struct_return_value();
     demo_struct_return_reference();
+    demo_simple_struct_implementation();
+    demo_mutable_struct_implementation();
+    demo_modular_code_struct_implementation();
+    demo_associated_functions_struct_implementation();
+    demo_associated_data_struct_implementation();
 }
 
 fn run_part1() {

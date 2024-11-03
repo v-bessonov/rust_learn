@@ -17,6 +17,8 @@ mod cloning;
 mod borrowing;
 mod functions;
 mod closures;
+mod structs;
+mod mytypes;
 
 use numeric::*;
 use simple_types::*;
@@ -35,6 +37,7 @@ use cloning::demo_cloning;
 use borrowing::*;
 use functions::*;
 use closures::*;
+use structs::*;
 
 fn main() {
     let course = Parts::Part2;
@@ -62,6 +65,12 @@ fn run_part2() {
     demo_closures_capture_reference();
     demo_closures_capture_value();
     demo_closures_iteration();
+    demo_accessing_struct();
+    demo_struct_instances();
+    demo_struct_pass_value();
+    demo_struct_pass_reference();
+    demo_struct_return_value();
+    demo_struct_return_reference();
 }
 
 fn run_part1() {

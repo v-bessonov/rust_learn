@@ -16,6 +16,7 @@ mod copying_moving;
 mod cloning;
 mod borrowing;
 mod functions;
+mod closures;
 
 use numeric::*;
 use simple_types::*;
@@ -24,7 +25,7 @@ use control_flow::*;
 use enums::{demo_simple_enums, demo_enum_with_data, demo_using_option_enum, demo_using_result_enum};
 use arrays::*;
 use tuples::*;
-use vectors::demo_vectors;
+use vectors::{demo_vectors, demo_closures_iteration};
 use maps::demo_maps;
 use scope::*;
 use parts::Parts;
@@ -33,6 +34,7 @@ use copying_moving::demo_copying_moving;
 use cloning::demo_cloning;
 use borrowing::*;
 use functions::*;
+use closures::*;
 
 fn main() {
     let course = Parts::Part2;
@@ -54,6 +56,12 @@ fn run_part2() {
     demo_returning_value();
     demo_returning_reference();
     demo_returning_mutable_reference();
+    demo_nested_functions();
+    demo_closures();
+    demo_closures_inferred_types();
+    demo_closures_capture_reference();
+    demo_closures_capture_value();
+    demo_closures_iteration();
 }
 
 fn run_part1() {

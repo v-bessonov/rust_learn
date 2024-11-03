@@ -20,6 +20,9 @@ mod closures;
 mod structs;
 mod mytypes;
 mod structs_functionality;
+mod mytraits;
+mod mystructs;
+mod traits;
 
 use numeric::*;
 use simple_types::*;
@@ -40,9 +43,10 @@ use functions::*;
 use closures::*;
 use structs::*;
 use structs_functionality::*;
+use traits::*;
 
 fn main() {
-    let course = Parts::Part2;
+    let course = Parts::Part2Traits;
 
     match course {
         Parts::Part1 => {
@@ -51,7 +55,22 @@ fn main() {
         Parts::Part2 => {
             run_part2();
         }
+        Parts::Part2Traits => {
+            run_part2_traits();
+        }
     }
+}
+
+fn run_part2_traits() {
+    demo_trait_essentials();
+    demo_trait_techniques();
+    demo_inheritance_polymorphism();
+    demo_trait_inheritance();
+    demo_displayable();
+    demo_debuggable();
+    demo_droppable();
+    demo_cloneable();
+    demo_copyable();
 }
 
 fn run_part2() {

@@ -24,6 +24,7 @@ mod mytraits;
 mod mystructs;
 mod traits;
 mod generics;
+mod concurrency;
 
 use numeric::*;
 use simple_types::*;
@@ -46,9 +47,10 @@ use structs::*;
 use structs_functionality::*;
 use traits::*;
 use generics::*;
+use concurrency::*;
 
 fn main() {
-    let course = Parts::Part2Generics;
+    let course = Parts::Part2Concurrency;
 
     match course {
         Parts::Part1 => {
@@ -63,7 +65,21 @@ fn main() {
         Parts::Part2Generics => {
             run_part2_generics();
         }
+        Parts::Part2Concurrency => {
+            run_part2_concurrency();
+        }
+
     }
+}
+
+fn run_part2_concurrency() {
+    // demo_spawning_threads();
+    // demo_joining_thread_single();
+    // demo_joining_thread_multiple();
+    // demo_capturing_state_implicit_move();
+    // demo_capturing_state_explicit_move();
+    // demo_channels_single_message();
+    demo_channels_multiple_messages();
 }
 
 fn run_part2_generics() {

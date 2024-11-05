@@ -23,6 +23,7 @@ mod structs_functionality;
 mod mytraits;
 mod mystructs;
 mod traits;
+mod generics;
 
 use numeric::*;
 use simple_types::*;
@@ -44,9 +45,10 @@ use closures::*;
 use structs::*;
 use structs_functionality::*;
 use traits::*;
+use generics::*;
 
 fn main() {
-    let course = Parts::Part2Traits;
+    let course = Parts::Part2Generics;
 
     match course {
         Parts::Part1 => {
@@ -58,7 +60,25 @@ fn main() {
         Parts::Part2Traits => {
             run_part2_traits();
         }
+        Parts::Part2Generics => {
+            run_part2_generics();
+        }
     }
+}
+
+fn run_part2_generics() {
+    demo_generic_structs();
+    demo_generic_functions();
+    demo_type_constraints();
+    demo_partialeq_derived();
+    demo_partialeq_implemented();
+    demo_partialeq_implemented_diff_types();
+    demo_eq_hash();
+    demo_partial_ord();
+    demo_ord();
+    demo_closures_fn_once();
+    demo_closures_fn_mut();
+    demo_closures_fn();
 }
 
 fn run_part2_traits() {

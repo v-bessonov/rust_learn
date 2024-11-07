@@ -50,7 +50,7 @@ use generics::*;
 use concurrency::*;
 
 fn main() {
-    let course = Parts::Part2Concurrency;
+    let course = Parts::Part2AdditionalTechniques;
 
     match course {
         Parts::Part1 => {
@@ -68,8 +68,21 @@ fn main() {
         Parts::Part2Concurrency => {
             run_part2_concurrency();
         }
+        Parts::Part2AdditionalTechniques => {
+            run_part2_additional_techniques();
+        }
+
 
     }
+}
+
+fn run_part2_additional_techniques(){
+    demo_box1();
+    demo_box2();
+    demo_box3();
+    demo_rc();
+    demo_unsafe_code();
+    demo_language_integration();
 }
 
 fn run_part2_concurrency() {
